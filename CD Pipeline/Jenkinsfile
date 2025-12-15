@@ -1,0 +1,14 @@
+pipeline {
+  stages {
+    stage('Build') {
+      steps {
+        echo 'Docker build'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'Terraform apply'
+      }
+    }
+  }
+}
